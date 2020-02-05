@@ -15,6 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        DCAPIManager.shared.host = "http://api.openweathermap.org/data/"
+        DCAPIManager.shared.apiVersion = "2.5/"
+        DCAPIManager.shared.enableDebug = true
+        
         return true
     }
 
